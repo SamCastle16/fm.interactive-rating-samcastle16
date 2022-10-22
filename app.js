@@ -14,13 +14,17 @@ buttons.forEach((button) => {
 });
 
 submit.onclick = () => {
-  document.getElementById(
-    'span'
-  ).innerHTML = `You selected ${numberValue} out of 5`;
+  if (document.querySelector('.active')) {
+    document.getElementById(
+      'span'
+    ).innerHTML = `You selected ${numberValue} out of 5`;
 
-  document.querySelector('.main-article').classList.add('hidden');
+    document.querySelector('.main-article').classList.add('hidden');
 
-  document.querySelector('.second-article').classList.remove('hidden');
+    document.querySelector('.second-article').classList.remove('hidden');
+  } else {
+    console.log('Please, select one number');
+  }
 };
 
 close.onclick = () => {
