@@ -41,6 +41,7 @@ main {
   background: radial-gradient(circle at center top,rgb(32, 40, 51),rgb(20, 25, 32) 100%);
   padding: 2em 2.5em 2em 2em;
   margin: 1.5em;
+  position: relative;
 }
 
 /* -----------  MAIN ARTICLE  ----------- */
@@ -129,6 +130,28 @@ button[type="submit"]:hover {
 
 .second-article {
   align-items: center;
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.6em;
+  height: 3.6em;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .1);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#close img {
+  position: relative;
+  top: 1px;
+  margin: 0;
+  width: 40%;
 }
 
 .second-article img {
@@ -177,10 +200,20 @@ footer a {
   :root {
     font-size: 14px;
   }
+
+  #close {
+    width: 3.2em;
+    height: 3.2em;
+  }
 }
 
 @media screen and (max-width:360px) {
   :root {
     font-size: 10px;
+  }
+
+  #close {
+    width: 2.3em;
+    height: 2.3em;
   }
 }
