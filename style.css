@@ -60,7 +60,7 @@ article {
 .article__container-img {
   width: 3em;
   height: 3em;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .07);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -75,13 +75,13 @@ article {
 h1 {
   font-size: 1.75em;
   color: #fff;
-  margin-bottom: 0.625em;
+  margin-bottom: 8px;
 }
 
 p {
   font-size: 0.9375em;
   color: var(--light-Grey);
-  line-height: 1.5em;
+  line-height: 26px;
 }
 
 .article__container-buttons {
@@ -93,7 +93,7 @@ p {
   width: 3.25em;
   height: 3.25em;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .07);
   font-weight: 700;
   color: var(--light-Grey);
   font-size: 1em;
@@ -140,7 +140,7 @@ button[type="submit"]:hover {
   width: 3.6em;
   height: 3.6em;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .07);
   color: #fff;
   display: flex;
   justify-content: center;
